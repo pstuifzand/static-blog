@@ -1,0 +1,6 @@
+baseURL = "https://static-blog-5aia.onrender.com/"
+languageCode = "en-us"
+title = "Testing"
+theme = "simple"
+Paginate = 2
+

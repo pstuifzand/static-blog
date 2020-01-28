@@ -1,0 +1,20 @@
+{{ define "main" }}
+	<ul class="list-unstyled">
+		{{ range .Paginator.Pages }}
+		<li class="media m-5">
+			<img src="http://peterstuifzand.nl/img/profile.jpg" class="img-fluid mr-3" style="width: 48px">
+			<div class="media-body">
+				<h2 class="p-name">{{ .Title }}</h2>
+				<div class="e-content">
+					{{ .Content }}
+				</div>
+				<p>
+					<a href="{{ .Permalink }}">#</a>
+					<time datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" | safeHTML }}">{{ .Date.Format "2006-01-02" }}</time>
+				</p>
+			</div>
+		</li>
+		{{ end }}
+	</ul>
+	{{ template "_internal/pagination.html" . }}
+{{ end }}
