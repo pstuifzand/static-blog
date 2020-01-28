@@ -8,3 +8,5 @@ tags:
 This is the first post on the blog.
 
 This is written with Markdown and Typora and generated with Hugo.
+
+This is a test.
